@@ -1,0 +1,183 @@
+@import url('image/maldiv/activiter.jfif');
+
+/* --- GLOBAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: url('image/maldiv/activiter.jfif') center/cover no-repeat fixed;
+}
+
+/* --- NAVBAR MULTI-NIVEAUX --- */
+.navbar {
+  background-color: #dfb38a;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 22px;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu > li > a:hover {
+  background-color: #dfb38a;
+  color: #ffffff;
+}
+
+/* --- SOUS-MENU --- */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff7f0;
+  min-width: 190px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.submenu li a {
+  padding: 10px 16px;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.submenu li a:hover {
+  background-color: #dfb38a;
+  color: white;
+}
+
+/* --- SOUS-SOUS-MENU À DROITE --- */
+.submenu li {
+  position: relative;
+}
+
+.submenu-right {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff7f0;
+  min-width: 190px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border-radius: 8px;
+}
+
+.submenu li:hover .submenu-right {
+  display: flex;
+}
+
+/* Affichage au survol */
+.menu li:hover > .submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- CONTAINER CONTACT --- */
+.contact-container {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* --- BOX FORMULAIRE --- */
+.contact-box {
+    width: 450px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    text-align: center;
+    color: #3a2f28;
+}
+
+.contact-box h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #8a5a3b;
+}
+
+.contact-box p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* --- FORMULAIRE --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(6px);
+    font-size: 15px;
+    color: #3a2f28;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* --- BOUTON --- */
+.btn-send {
+    margin-top: 10px;
+    padding: 14px;
+    background: #dfb38a;
+    color: #3a2f28;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    background: #c99a6a;
+    color: white;
+}

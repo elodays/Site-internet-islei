@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f6f3ef;
+    color: #3a2f28;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #dfb38a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    list-style: none;
+     position: sticky;
+     top: 0;
+    z-index: 200;
+   
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3a2f28;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.2));
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+}
+
+/* SECTIONS */
+.offre-detail {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.bloc {
+    margin-bottom: 80px;
+}
+
+.img-large {
+    width: 100%;
+    border-radius: 18px;
+    margin-top: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.2);
+}
+
+/* CARDS */
+.card {
+    display: flex;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 30px 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.card img {
+    width: 45%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+/* LISTE */
+.liste-icone li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+/* PRIX */
+.prix-box {
+    background: linear-gradient(135deg, #dfb38a, #c99a6a);
+    padding: 60px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+}
+
+/* BOUTONS */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #3a2f28;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: black;
+}
+
+.btn-hero {
+    background: #dfb38a;
+    color: #3a2f28;
+}
+
+footer {
+    background: #e7c7a3;
+    padding: 25px;
+    text-align: center;
+    font-weight: 600;
+}
